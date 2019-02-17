@@ -98,197 +98,22 @@ $(document).ready(function() {
 
   //------------------ about functionality ------------------ //
 
-  home.mouseover(function() {
-    $(homeContent).css({
-      "visibility": "visible"
-    });
-  });
-
-
-  home.click(function() {
+  $('.home, .about, .widgets, .logos').click(function(event) {
+    var target = $(event.target);
+    if (target.is("li.home")) {
+      homeContent.css("visibility", "visible");
+    }
     $(this).toggleClass('active');
     if ($(this).hasClass('active')) {
       $(this).css({
-        "border-top": "4px solid #ffffff",
-        "border-bottom": "4px solid #ffffff",
-        "background": "linear-gradient(to right, #C06C84, #6C5B7B, #355C7D)",
-        "color": "#ffffff"
+        "border-bottom": "2px solid black"
       });
     } else {
       $(this).css({
-        "border-top": "4px solid #737373",
-        "border-bottom": "4px solid #737373",
-        "background": "#ffffff",
-        "color": "#737373"
-      });
-    }
-    $(homeContent).css({
-      "visibility": "visible"
-    });
-  });
-
-
-  home.mouseleave(function() {
-    if ($(this).hasClass('active')) {
-      $(aboutContent).css({
-        "visibility": "visible"
-      });
-    } else {
-      $(homeContent).css({
-        "visibility": "hidden"
+        "border-bottom": "2px solid white"
       });
     }
   });
-
-
-  //------------------ about functionality ------------------ //
-
-  about.mouseover(function() {
-    $(aboutContent).css({
-      "visibility": "visible"
-    });
-  });
-
-
-  about.click(function() {
-    $(this).toggleClass('active');
-    if ($(this).hasClass('active')) {
-      $(this).css({
-        "border-top": "4px solid #ffffff",
-        "border-bottom": "4px solid #ffffff",
-        "background": "linear-gradient(to right, #C06C84, #6C5B7B, #355C7D)",
-        "color": "#ffffff"
-      });
-    } else {
-      $(this).css({
-        "border-top": "4px solid #737373",
-        "border-bottom": "4px solid #737373",
-        "background": "#ffffff",
-        "color": "#737373"
-      });
-    }
-    $(aboutContent).css({
-      "visibility": "visible"
-    });
-  });
-
-
-  about.mouseleave(function() {
-    if ($(this).hasClass('active')) {
-      $(aboutContent).css({
-        "visibility": "visible"
-      });
-    } else {
-      $(aboutContent).css({
-        "visibility": "hidden"
-      });
-    }
-  });
-
-  //------------------ widget functionality ------------------ //
-
-  widgets.mouseover(function() {
-    $(widgetsContent).css({
-      "visibility": "visible"
-    });
-  });
-
-
-  widgets.click(function() {
-    $(this).toggleClass('active');
-    if ($(this).hasClass('active')) {
-      $(this).css({
-        "border-left": "4px solid #ffffff",
-        "border-right": "4px solid #ffffff",
-        "background": "linear-gradient(to right, #C06C84, #6C5B7B, #355C7D)",
-        "color": "#ffffff"
-      });
-    } else {
-      $(this).css({
-        "border-left": "4px solid #737373",
-        "border-right": "4px solid #737373",
-        "background": "#ffffff",
-        "color": "#737373"
-      });
-    }
-    $(widgetsContent).css({
-      "visibility": "visible"
-    });
-  });
-
-
-  widgets.mouseleave(function() {
-    if ($(this).hasClass('active')) {
-      $(widgetsContent).css({
-        "visibility": "visible"
-      });
-    } else {
-      $(widgetsContent).css({
-        "visibility": "hidden"
-      });
-    }
-  });
-
-
-
-  //------------------ logo functionality ------------------ //
-
-  logos.mouseover(function() {
-    $(logosContent).css({
-      "visibility": "visible"
-    });
-  });
-
-
-  logos.click(function() {
-    $(this).toggleClass('active');
-    if ($(this).hasClass('active')) {
-      $(this).css({
-        "border-right": "4px solid #ffffff",
-        "border-bottom": "4px solid #ffffff",
-        "background": "linear-gradient(to right, #C06C84, #6C5B7B, #355C7D)",
-        "color": "#ffffff"
-      });
-    } else {
-      $(this).css({
-        "border-right": "4px solid #737373",
-        "border-bottom": "4px solid #737373",
-        "background": "#ffffff",
-        "color": "#737373"
-      });
-    }
-    $(logosContent).css({
-      "visibility": "visible"
-    });
-  });
-
-
-  logos.mouseleave(function() {
-    if ($(this).hasClass('active')) {
-      $(logosContent).css({
-        "visibility": "visible"
-      });
-    } else {
-      $(logosContent).css({
-        "visibility": "hidden"
-      });
-    }
-  });
-
-
-
-  // ---------- widgets hover ------------
-
-
-  // ---------- about hover ------------
-
-
-  // ---------- home hover ------------
-
-  // ---------- home clicked ------------
-
-
-
 
 
 

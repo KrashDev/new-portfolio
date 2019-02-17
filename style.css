@@ -41,8 +41,9 @@ body {
 }
 
 .main {
-  margin-top: 10%;
-  margin-left: 32%;
+  z-index: 9;
+  margin-top: 8%;
+  margin-left: 34%;
   background-image: url("images/forest1.jpg");
   height: 700px;
   width: 900px;
@@ -61,13 +62,14 @@ body {
   font-weight: bold;
   width: 300px;
   position: absolute;
-  left: 2%;
+  left: 1%;
 }
 
 .main-nav li {
-  padding: 17px;
-  margin: 20px;
-  /* color: #737373; */
+  border-bottom: 2px solid white;
+  width: 100px;
+  padding: 7px;
+  margin: 35px;
   display: block;
   list-style-type: none;
 }
@@ -88,24 +90,23 @@ body {
 }
 
 .content {
-  margin-top: 5%;
-  margin-bottom: 3%;
-  margin-left: 14%;
-  /* border: 6px solid #ffffff; */
+  font-family: Raleway;
+  visibility: hidden;
+  position: absolute;
+  background: #ffffff;
+  top: 25%;
+  left: 34%;
+  z-index: 99;
   height: 500px;
-  width: 1000px;
-}
-
-.home-content, .about-content, .widgets-content, .logos-content {
-  border: 6px solid #ffffff;
+  width: 400px;
 }
 
 .home-content {
+  background: white;
   visibility: hidden;
-  margin: 2%;
-  margin-top: 2%;
-  font-size: 25px;
+  font-size: 20px;
   color: #666666;
+  padding: 25px;
 }
 
 .about-content {
@@ -225,11 +226,15 @@ body {
 }
 
 .gears {
-  height: 150px
+  height: 85px
 }
 
 .gk-banner {
   height: 300px;
+}
+
+strong {
+  font-size: 25px;
 }
 
 /* --------------- ring situation --------------- */
