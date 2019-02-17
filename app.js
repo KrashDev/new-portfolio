@@ -15,19 +15,6 @@ $(document).ready(function() {
 
   var content = $('.content');
 
-  // var shape = document.querySelector('#b3Eb3Y66Aw');
-  // var shapeLength = shape.getTotalLength();
-  // console.log(shapeLength);
-
-  setTimeout(function() {
-    $('.flash').css('display', 'none');
-    $('.block').css('display', 'none');
-  }, 3500);
-
-  setTimeout(function() {
-    $('.main-nav').css('visibility', 'visible');
-  }, 3750);
-
 
   $('.button-light').mouseover(function() {
     $(this).find('img').attr('src', 'images/light-off.svg');
@@ -69,40 +56,6 @@ $(document).ready(function() {
     $(this).find('img').attr('src', 'images/orange-off.svg');
   });
 
-  // setTimeout(function() {
-  //   $('.signature').css('display', 'none');
-  // }, 9000);
-  //
-  // setTimeout(function() {
-  //   $('.main-nav').css('visibility', 'visible');
-  // }, 10000);
-
-  // function selectTheme() {
-  //   var selectedValue = document.getElementById("list").value;
-  //   if (selectedValue == 'Dark') {
-  //     $('body').addClass('darkify');
-  //   }
-  // }
-
-
-
-
-  function selectTheme() {
-    var selectedValue = document.getElementById("list").value;
-    console.log(selectedValue);
-    if (selectedValue == 'dark') {
-      $('body').addClass('darkify');
-    }
-    if (selectedValue == 'default') {
-      $('body').removeClass('darkify');
-    }
-    if (selectedValue == 'water') {
-      $('body').addClass('bubblify');
-    }
-    if (selectedValue == 'dark') {
-      $('body').addClass('darkify');
-    }
-  }
 
   $('.button-blackhole').mouseover(function() {
     $(this).find('img').addClass('active');
@@ -142,13 +95,6 @@ $(document).ready(function() {
       // "animation-delay": delay + "s"
     });
   });
-
-  //   }, 1000);
-  // })();
-  //
-  // setInterval(function() {
-  //   $('.dots').remove();
-  // }, 1500);
 
   //------------------ about functionality ------------------ //
 
