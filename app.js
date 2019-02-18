@@ -100,8 +100,15 @@ $(document).ready(function() {
 
   $('.home, .about, .widgets, .logos').click(function(event) {
     var target = $(event.target);
-    if (target.is("li.home")) {
+    if (target.is("li.home.active")) {
       homeContent.css("visibility", "visible");
+    }
+    if (target.is("li.logos.active")) {
+      logosContent.css("visibility", "visible");
+    }
+    if (!target.hasClass("active")) {
+      homeContent.css("visibility", "hidden");
+      logosContent.css("visibility", "hidden");
     }
     $(this).toggleClass('active');
     if ($(this).hasClass('active')) {

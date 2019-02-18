@@ -54,7 +54,7 @@ body {
 
 .main-nav {
   height: 600px;
-  margin-top: 12%;
+  margin-top: 3%;
   font-size: 15px;
   text-transform: uppercase;
   list-style-type: none;
@@ -225,8 +225,17 @@ body {
   }
 }
 
-.gears {
-  height: 85px
+.gears, .indie-album {
+  height: 85px;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.gears:hover, .indie-album:hover {
+  box-shadow: none;
+}
+
+.home-content a {
+  margin-right: 20px;
 }
 
 .gk-banner {
@@ -291,11 +300,12 @@ strong {
 .logos-content {
   visibility: hidden;
   position: absolute;
-  top: 35%;
+  top: 10%;
   display: flex;
   flex-wrap: wrap;
-  width: 1000px;
-  justify-content: space-between;
+  width: 900px;
+  justify-content: space-evenly;
+  background: white;
 }
 
 .logos-content img {
@@ -319,20 +329,27 @@ strong {
 }
 
 .footer-links {
+  position: absolute;
+  top: 80%;
+  left: 7%;
   display: flex;
   justify-content: center;
 }
 
 .footer-links a {
+  margin-right: 30px;
   font-family: raleway;
-  font-size: 20px;
-  color: #5c3cc0;
-  margin: 10px;
+  font-size: 15px;
+  color: black;
+  /* margin: 10px; */
+  bottom: -40px;
+  position: relative;
+}
+
+.footer-links img {
+  height: 35px;
 }
 
 .footer-links a:hover {
-  transform: skew(26deg, 0deg);
   text-decoration: none;
-  color: #ffffff;
-  background: #4d3597;
 }
