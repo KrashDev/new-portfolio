@@ -96,32 +96,26 @@ $(document).ready(function() {
     });
   });
 
-  //------------------ about functionality ------------------ //
+  //------------------ functionality ------------------ //
+
 
   $('.home, .about, .widgets, .logos').click(function(event) {
     var target = $(event.target);
-    if (target.is("li.home.active")) {
-      homeContent.css("visibility", "visible");
+    if (target.is(".home")) {
+      $('.home, .home-content').toggleClass('active');
     }
-    if (target.is("li.logos.active")) {
-      logosContent.css("visibility", "visible");
+    if (target.is(".about")) {
+      $('.about, .about-content').toggleClass('active');
     }
-    if (!target.hasClass("active")) {
-      homeContent.css("visibility", "hidden");
-      logosContent.css("visibility", "hidden");
+    if (target.is(".widgets")) {
+      $('.widgets, .widgets-content').toggleClass('active');
+      $('.main').toggleClass('active');
     }
-    $(this).toggleClass('active');
-    if ($(this).hasClass('active')) {
-      $(this).css({
-        "border-bottom": "2px solid black"
-      });
-    } else {
-      $(this).css({
-        "border-bottom": "2px solid white"
-      });
+    if (target.is(".logos")) {
+      $('.logos, .logos-content').toggleClass('active');
+      $('.main').toggleClass('active');
     }
   });
-
 
 
 

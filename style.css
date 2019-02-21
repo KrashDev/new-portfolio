@@ -52,6 +52,18 @@ body {
   background-size: cover;
 }
 
+.main.active {
+  z-index: 9;
+  margin-top: 8%;
+  margin-left: 34%;
+  background-image: none;
+  height: 700px;
+  width: 900px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .main-nav {
   height: 600px;
   margin-top: 3%;
@@ -295,17 +307,75 @@ strong {
   }
 }
 
-/* logo section */
+/* --------------------- widgets content ---------------------  */
 
-.logos-content {
+.widgets-content {
+  font-size: 20px;
   visibility: hidden;
   position: absolute;
-  top: 10%;
-  display: flex;
+  top: -20%;
+  display: block;
   flex-wrap: wrap;
   width: 900px;
   justify-content: space-evenly;
   background: white;
+}
+
+.widgets {
+  border-bottom: 2px solid white;
+}
+
+.widgets.active {
+  border-bottom: 2px solid black;
+}
+
+.widgets-content.active {
+  visibility: visible;
+}
+
+/* --------------------- logos content ---------------------  */
+
+.logos-content {
+  font-size: 20px;
+  visibility: hidden;
+  position: absolute;
+  top: -20%;
+  display: block;
+  flex-wrap: wrap;
+  width: 900px;
+  justify-content: space-evenly;
+  background: white;
+}
+
+.logos {
+  border-bottom: 2px solid white;
+}
+
+.logos.active {
+  border-bottom: 2px solid black;
+}
+
+.logos-content.active {
+  visibility: visible;
+}
+
+/* --------------------- home content ---------------------  */
+
+.home {
+  border-bottom: 2px solid white;
+}
+
+.home.active {
+  border-bottom: 2px solid black;
+}
+
+.home-content.active {
+  visibility: visible;
+}
+
+.logo-text {
+  text-align: left;
+  margin-bottom: 40px;
 }
 
 .logos-content img {
