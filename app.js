@@ -96,7 +96,7 @@ $(document).ready(function() {
     });
   });
 
-  //------------------ functionality ------------------ //
+  //------------------ navigation menu functionality ------------------ //
 
 
   $('.home, .about, .widgets, .logos').click(function(event) {
@@ -106,6 +106,7 @@ $(document).ready(function() {
     }
     if (target.is(".about")) {
       $('.about, .about-content').toggleClass('active');
+      $('.main').toggleClass('active');
     }
     if (target.is(".widgets")) {
       $('.widgets, .widgets-content').toggleClass('active');
@@ -115,6 +116,42 @@ $(document).ready(function() {
       $('.logos, .logos-content').toggleClass('active');
       $('.main').toggleClass('active');
     }
+  });
+
+
+
+  //------------------ social links functionality ------------------ //
+
+  $('.footer-links .facebook').mouseover(function() {
+    $(this).find('img').attr('src', 'images/fb-logo-on.svg');
+  });
+
+  $('.footer-links .facebook').mouseleave(function() {
+    $(this).find('img').attr('src', 'images/fb-logo.svg');
+  });
+
+  $('.footer-links .insta').mouseover(function() {
+    $(this).find('img').attr('src', 'images/insta-logo-on.svg');
+  });
+
+  $('.footer-links .insta').mouseleave(function() {
+    $(this).find('img').attr('src', 'images/insta-logo.svg');
+  });
+
+  $('.footer-links .linked').mouseover(function() {
+    $(this).find('img').attr('src', 'images/linked-logo-on.svg');
+  });
+
+  $('.footer-links .linked').mouseleave(function() {
+    $(this).find('img').attr('src', 'images/linked-logo.svg');
+  });
+
+  $('.footer-links .git').mouseover(function() {
+    $(this).find('img').attr('src', 'images/gh-logo-on.svg');
+  });
+
+  $('.footer-links .git').mouseleave(function() {
+    $(this).find('img').attr('src', 'images/gh-logo.svg');
   });
 
 

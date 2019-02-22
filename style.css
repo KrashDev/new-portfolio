@@ -121,16 +121,6 @@ body {
   padding: 25px;
 }
 
-.about-content {
-  visibility: hidden;
-  position: absolute;
-  top: 50%;
-  font-size: 25px;
-  /* color: #666666; */
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .widgets-content {
   visibility: hidden;
   position: absolute;
@@ -313,7 +303,7 @@ strong {
   font-size: 20px;
   visibility: hidden;
   position: absolute;
-  top: -20%;
+  top: -12%;
   display: block;
   flex-wrap: wrap;
   width: 900px;
@@ -339,7 +329,7 @@ strong {
   font-size: 20px;
   visibility: hidden;
   position: absolute;
-  top: -20%;
+  top: -12%;
   display: block;
   flex-wrap: wrap;
   width: 900px;
@@ -356,6 +346,32 @@ strong {
 }
 
 .logos-content.active {
+  visibility: visible;
+}
+
+/* --------------------- about content ---------------------  */
+
+.about-content {
+  font-size: 20px;
+  visibility: hidden;
+  position: absolute;
+  top: -12%;
+  display: block;
+  flex-wrap: wrap;
+  width: 900px;
+  justify-content: space-evenly;
+  background: white;
+}
+
+.about {
+  border-bottom: 2px solid white;
+}
+
+.about.active {
+  border-bottom: 2px solid black;
+}
+
+.about-content.active {
   visibility: visible;
 }
 
@@ -381,6 +397,8 @@ strong {
 .logos-content img {
   margin: 20px;
 }
+
+/* ------------------------ */
 
 .bookmarker, .beatroot, .roof, .peach {
   height: 150px;
