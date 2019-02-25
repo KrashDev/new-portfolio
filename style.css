@@ -139,6 +139,10 @@ body {
   background-color: #ffffff;
 }
 
+.widgets-content button.button-light-switch {
+  border: none;
+}
+
 #b3Eb3Y66Aw {
   stroke-dasharray: 2784;
   stroke-dashoffset: -2784;
@@ -330,7 +334,7 @@ strong {
   visibility: hidden;
   position: absolute;
   top: -12%;
-  display: block;
+  display: flex;
   flex-wrap: wrap;
   width: 900px;
   justify-content: space-evenly;
@@ -405,6 +409,7 @@ strong {
 }
 
 .tenns {
+  margin-top: 50px !important;
   height: 100px;
 }
 
@@ -414,6 +419,10 @@ strong {
 
 .teamjim, .speakup, .handyman {
   height: 170px;
+}
+
+.handyman {
+  margin-top: -10px !important;
 }
 
 .footer-links {
