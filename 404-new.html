@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Libre+Barcode+39|Libre+Franklin" rel="stylesheet">
+  <title>404 Animation</title>
+</head>
+
+<body>
+
+  <h1>page not found</h1>
+
+
+  <div class="folder"><img src="images/folder.svg"></div>
+  <div class="rewind"><img src="images/rewind.svg"></div>
+
+  <style>
+    body {
+      background: #333;
+    }
+
+    h1 {
+      font-family: 'Libre Franklin', sans-serif;
+      position: absolute;
+      top: 20%;
+      left: 60%;
+      color: #ccffff;
+      text-align: center;
+      font-size: 50px;
+      animation: boop 2s linear forwards;
+      animation-delay: 3s;
+      opacity: 0;
+    }
+
+    @keyframes boop {
+      0% {}
+      50% {}
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .folder {
+      z-index: 99;
+      position: absolute;
+      top: 51%;
+      left: 50%;
+      animation: poof 1s linear forwards;
+      animation-delay: 5s;
+    }
+
+    @keyframes poof {
+      0% {}
+      80% {
+        transform: scale(1.5);
+      }
+      100% {
+        transform: scale(1.5);
+        opacity: 0;
+      }
+    }
+
+    .rewind img {
+      height: 50px;
+    }
+
+    .rewind {
+      position: absolute;
+      top: 25%;
+      left: 55%;
+      animation: boop 2s linear forwards;
+      animation-delay: 3s;
+      opacity: 0;
+    }
+
+    .page {
+      position: fixed;
+      animation: cooler ease-out;
+      animation-duration: 1s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+    }
+
+    /*right*/
+
+    @keyframes cooler {
+      0% {}
+      100% {
+        top: 50%;
+        left: 50%;
+      }
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.2.1.js "></script>
+
+  <script>
+    $(document).ready(function() {
+
+      //append boxes
+      var i = 0;
+      for (i = 0; i < 70; i++) {
+        $('body').append('<img class="page" src="images/page.svg">');
+      }
+
+      //animation delay
+      var j = 0;
+      $('.page').each(function(j) {
+        $(this).css("animation-delay", (j * 0.05) + "s");
+      });
+
+      //random location
+      $('.page').each(function() {
+        var x = Math.floor((Math.random() * 1000) + 1);
+        var y = Math.floor((Math.random() * 1000) + 1);
+        $(this).css({
+          "top": y,
+          "left": x
+        });
+      });
+
+      setTimeout(function() {
+        $('.page').each(function() {
+          $(this).css('opacity', '0');
+        });
+      }, 5000);
+
+
+    }); //document ready function
+  </script>
+
+</html>

@@ -164,7 +164,7 @@ body {
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
 }
 
-.button-light img, .button-gears img, .button-blackhole img, .button-best img, .button-beat svg {
+.button-lamp img, .button-gears img, .button-blackhole img, .button-best img, .button-beat svg {
   height: 75px;
 }
 
@@ -175,6 +175,11 @@ body {
 .button-gears img:hover {
   animation: cog 3s linear infinite;
   transform-origin: center;
+}
+
+p.header-text {
+  border-bottom: 2px solid #333;
+  width: 250px;
 }
 
 @keyframes cog {
@@ -334,7 +339,7 @@ strong {
   visibility: hidden;
   position: absolute;
   top: -12%;
-  display: flex;
+  display: block;
   flex-wrap: wrap;
   width: 900px;
   justify-content: space-evenly;
