@@ -108,27 +108,12 @@ $(document).ready(function() {
 
   //------------------ navigation menu functionality ------------------ //
 
-  // $('.home, .about, .widgets, .logos').each(function(event) {
-  //   var target = $(event.target);
-  //   if (target.is(".home")) {
-  //     $('.home, .home-content').toggleClass('active');
-  //   }
-  //   if (target.is(".about")) {
-  //     $('.about, .about-content').toggleClass('active');
-  //     $('.main').toggleClass('active');
-  //   }
-  //   if (target.is(".widgets")) {
-  //     $('.widgets, .widgets-content').toggleClass('active');
-  //     $('.main').toggleClass('active');
-  //   }
-  //   if (target.is(".logos")) {
-  //     $('.logos, .logos-content').toggleClass('active');
-  //     $('.main').toggleClass('active');
-  //   }
-  // });
-  $('.home').each(function() {
-    $('.home, .home-content').addClass('active');
-  });
+
+  setTimeout(function() {
+    $('.home').each(function() {
+      $('.home, .home-content').addClass('active');
+    });
+  }, 2000);
 
 
   $('.home, .about, .widgets, .logos').click(function(event) {
@@ -153,6 +138,26 @@ $(document).ready(function() {
       $('.home, .home-content, .widgets, .widgets-content, .about, .about-content').removeClass('active');
       $('.main').addClass('active');
     }
+  });
+
+
+  //folder functionality
+  $('.about-content .folder-links a[href*="old-website"]').mouseover(function() {
+    $(this).find('img').attr('src', 'images/folder-old.svg');
+  });
+
+  $('.about-content .folder-links a[href="404-new.html"]').mouseover(function() {
+    $(this).find('img').attr('src', 'images/folder-404.svg');
+  });
+
+  $('.about-content .folder-links a[href*="marta"]').mouseover(function() {
+    $(this).find('img').attr('src', 'images/folder-marta.svg');
+  });
+
+  //folder leave
+
+  $('.about-content .folder-links a').mouseleave(function() {
+    $(this).find('img').attr('src', 'images/folder.svg');
   });
 
 
