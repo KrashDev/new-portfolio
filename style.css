@@ -36,20 +36,33 @@ a:hover, a:visited {
   height: 75px;
 }
 
-.orbit .moon {
-  left: 25px;
-  top: 25px;
-  z-index: 9;
+.gravity {
+  z-index: 99999;
+  animation: sideToSide 2s infinite ease-in-out alternate;
   position: absolute;
-  animation: myOrbit 3s linear infinite;
+  margin-left: 8px;
 }
 
-@keyframes myOrbit {
-  from {
-    transform: rotate(0deg) translateX(40px) rotate(0deg);
-  }
+img.moon {
+  z-index: 9999;
+  position: absolute;
+  left: 20%;
+  top: 20%;
+  animation: satellite 4s linear infinite;
+  margin-left: -30px;
+  margin-top: 15px;
+  transform-origin: 30px center;
+}
+
+@keyframes satellite {
   to {
-    transform: rotate(360deg) translateX(40px) rotate(-360deg);
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes sideToSide {
+  to {
+    transform: translateX(100px);
   }
 }
 
