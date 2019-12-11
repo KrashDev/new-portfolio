@@ -111,18 +111,6 @@ img.moon {
     background-size: cover;
 }
 
-.main.active {
-    z-index: 9;
-    margin-top: 8%;
-    margin-left: 34%;
-    background-image: none;
-    height: 700px;
-    width: 900px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 .main-nav {
     height: 600px;
     margin-top: 3%;
@@ -138,15 +126,15 @@ img.moon {
 
 .main-nav li {
     border-bottom: 2px solid white;
-    width: 40%;
-    padding: 7px;
-    /* margin: 35px; */
+    width: 30%;
+    padding: 1%;
+    margin: 4%;
     display: block;
     list-style-type: none;
 }
 
 ul {
-    padding-inline-start: 7%;
+    padding-inline-start: 17%;
 }
 
 .donny-text {
@@ -154,12 +142,12 @@ ul {
     text-transform: capitalize;
     font-size: 30px;
     font-family: 'Pacifico', cursive;
-    left: 10%;
+    left: 20%;
 }
 
 .descriptor-text {
     position: relative;
-    left: 10%;
+    left: 20%;
     font-size: 12px;
     margin-bottom: 10%;
 }
@@ -424,18 +412,6 @@ strong {
     background: white;
 }
 
-.widgets {
-    border-bottom: 2px solid white;
-}
-
-.widgets.active {
-    border-bottom: 2px solid black;
-}
-
-.widgets-content.active {
-    visibility: visible;
-}
-
 
 /* --------------------- logos content ---------------------  */
 
@@ -443,10 +419,8 @@ strong {
     font-size: 20px;
     visibility: hidden;
     position: absolute;
-    top: -12%;
     display: block;
     flex-wrap: wrap;
-    width: 900px;
     justify-content: space-evenly;
     background: white;
 }
@@ -467,13 +441,13 @@ strong {
 /* --------------------- about content ---------------------  */
 
 .about-content {
-    font-size: 20px;
+    font-size: 18px;
     visibility: hidden;
     position: absolute;
-    top: -12%;
+    /* top: -12%; */
     display: block;
     flex-wrap: wrap;
-    width: 900px;
+    /* width: 60%; */
     justify-content: space-evenly;
     background: white;
 }
