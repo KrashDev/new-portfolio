@@ -137,24 +137,27 @@ $(document).ready(function() {
 
     //------------------ logos functionality ------------------ //
 
-    //this does not work yet
-    // $('.next-logo').click(function(){
-    //   var imgActive = $(this).parent().find('img.active');
-    //   if ($(imgActive).hasClass('last')) {
-    //   $(imgActive).toggleClass('active');
-    //     var first = $(this).parent().find('img.first').addClass('active');
-    //   } else {
-    //   $(imgActive).toggleClass('active');
-    //   $(imgActive).next().addClass('active');
-    //   }
-    //   });
+    $('.next-logo').click(function() {
+        var imgActive = $(this).parent().find('img.active');
+        if ($(imgActive).hasClass('last')) {
+            $(imgActive).toggleClass('active');
+            $(this).parent().find('img.first').addClass('active');
+        } else {
+            $(imgActive).toggleClass('active');
+            $(imgActive).next().addClass('active');
+        }
+    });
 
-    //this works until you get to the last logo
-    // $('.next-logo').click(function(){
-    //   var imgActive = $(this).parent().find('img.active');
-    // $(imgActive).toggleClass('active');
-    //   $(imgActive).next().addClass('active');
-    // });
+    $('.previous-logo').click(function() {
+        var imgActive = $(this).parent().find('img.active');
+        if ($(imgActive).hasClass('first')) {
+            $(imgActive).toggleClass('active');
+            $(this).parent().find('img.last').addClass('active');
+        } else {
+            $(imgActive).toggleClass('active');
+            $(imgActive).previous().addClass('active');
+        }
+    });
 
 
 
