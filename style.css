@@ -64,7 +64,7 @@ img.moon {
 
 @keyframes sideToSide {
     to {
-        transform: translateX(100px);
+        transform: translateX(70px);
     }
 }
 
@@ -114,7 +114,7 @@ img.moon {
 .main-nav {
     height: 600px;
     margin-top: 3%;
-    font-size: 15px;
+    font-size: 12px;
     text-transform: uppercase;
     list-style-type: none;
     font-family: Raleway;
@@ -172,7 +172,7 @@ ul {
     padding: 25px;
 }
 
-.widgets-content {
+.contact-content {
     visibility: hidden;
     position: absolute;
     top: 50%;
@@ -181,17 +181,13 @@ ul {
     /* justify-content: space-between; */
 }
 
-.widgets-content button {
+.contact-content button {
     padding: 15px 30px;
     font-family: Raleway;
     font-size: 20px;
     border: 3px solid #5a5a5a;
     margin: 25px;
     background-color: #ffffff;
-}
-
-.widgets-content button.button-light-switch {
-    border: none;
 }
 
 #b3Eb3Y66Aw {
@@ -398,13 +394,12 @@ strong {
 }
 
 
-/* --------------------- widgets content ---------------------  */
+/* --------------------- contact content ---------------------  */
 
-.widgets-content {
+.contact-content {
     font-size: 20px;
     visibility: hidden;
     position: absolute;
-    top: -12%;
     display: block;
     flex-wrap: wrap;
     width: 900px;
@@ -434,6 +429,27 @@ strong {
 }
 
 .logos-content.active {
+    visibility: visible;
+}
+
+.logos-content img {
+    width: 50%;
+    display: none;
+}
+
+.logos-content i {
+    display: inline-block;
+}
+
+.logos-content img.active {
+    display: inline-block;
+}
+
+.contact.active {
+    border-bottom: 2px solid black;
+}
+
+.contact-content.active {
     visibility: visible;
 }
 
@@ -542,6 +558,10 @@ strong {
     /* margin: 10px; */
     bottom: -40px;
     position: relative;
+}
+
+.footer-links a:hover {
+    border: 1px solid #3a3a3a;
 }
 
 .footer-links img {

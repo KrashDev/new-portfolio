@@ -66,7 +66,7 @@ $(document).ready(function() {
     //------------------ navigation menu functionality ------------------ //
 
 
-    $('.home, .about, .logos').click(function(event) {
+    $('.home, .about, .contact, .logos').click(function(event) {
         var target = $(event.target);
         if (target.is(".home")) {
             $('.home, .home-content').toggleClass('active');
@@ -87,6 +87,13 @@ $(document).ready(function() {
             $('.logos, .logos-content').toggleClass('active');
             $('.home, .home-content, .about, .about-content').removeClass('active');
             if ($('.logos').hasClass('active')) {
+                $('.main-img').css('display', 'none');
+            }
+        }
+        if (target.is(".contact")) {
+            $('.contact, .contact-content').toggleClass('active');
+            $('.home, .home-content, .logos, .logos-content, .about, .about-content').removeClass('active');
+            if ($('.contact').hasClass('active')) {
                 $('.main-img').css('display', 'none');
             }
         }
@@ -126,6 +133,28 @@ $(document).ready(function() {
     $('.footer-links .git').mouseleave(function() {
         $(this).find('img').attr('src', 'images/gh-logo.svg');
     });
+
+
+    //------------------ logos functionality ------------------ //
+
+    //this does not work yet
+    // $('.next-logo').click(function(){
+    //   var imgActive = $(this).parent().find('img.active');
+    //   if ($(imgActive).hasClass('last')) {
+    //   $(imgActive).toggleClass('active');
+    //     var first = $(this).parent().find('img.first').addClass('active');
+    //   } else {
+    //   $(imgActive).toggleClass('active');
+    //   $(imgActive).next().addClass('active');
+    //   }
+    //   });
+
+    //this works until you get to the last logo
+    // $('.next-logo').click(function(){
+    //   var imgActive = $(this).parent().find('img.active');
+    // $(imgActive).toggleClass('active');
+    //   $(imgActive).next().addClass('active');
+    // });
 
 
 
