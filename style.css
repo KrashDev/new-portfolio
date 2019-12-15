@@ -172,15 +172,6 @@ ul {
     padding: 25px;
 }
 
-.contact-content {
-    visibility: hidden;
-    position: absolute;
-    top: 50%;
-    display: flex;
-    flex-wrap: wrap;
-    /* justify-content: space-between; */
-}
-
 .contact-content button {
     padding: 15px 30px;
     font-family: Raleway;
@@ -188,6 +179,20 @@ ul {
     border: 3px solid #5a5a5a;
     margin: 25px;
     background-color: #ffffff;
+}
+
+ul.contact {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-content form {
+    margin: 0 3em 0 0;
+    width: calc(50% - 1.5em);
+}
+
+ul.contact-information {
+    width: calc(50% - 1.5em);
 }
 
 #b3Eb3Y66Aw {
@@ -402,7 +407,7 @@ strong {
     position: absolute;
     display: block;
     flex-wrap: wrap;
-    width: 900px;
+    /* width: 900px; */
     justify-content: space-evenly;
     background: white;
 }
