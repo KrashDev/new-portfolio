@@ -158,10 +158,10 @@ ul {
     position: absolute;
     background: #ffffff;
     top: 25%;
-    left: 34%;
+    left: 35%;
     z-index: 99;
     height: 500px;
-    width: 400px;
+    width: 50%;
 }
 
 .home-content {
@@ -405,11 +405,15 @@ strong {
     font-size: 20px;
     visibility: hidden;
     position: absolute;
-    display: block;
+    display: inline-block;
     flex-wrap: wrap;
     /* width: 900px; */
     justify-content: space-evenly;
     background: white;
+}
+
+:before {
+    padding: 10%;
 }
 
 
@@ -434,6 +438,8 @@ strong {
 }
 
 .logos-content.active {
+    border: 2px solid #474747;
+    padding: 5%;
     visibility: visible;
 }
 
@@ -455,6 +461,8 @@ strong {
 }
 
 .contact-content.active {
+    border: 2px solid #474747;
+    padding: 5%;
     visibility: visible;
 }
 
@@ -482,6 +490,8 @@ strong {
 }
 
 .about-content.active {
+    border: 2px solid #474747;
+    padding: 5%;
     visibility: visible;
 }
 
@@ -516,6 +526,10 @@ strong {
 
 .logos-content img {
     margin: 20px;
+}
+
+.content strong {
+    border-bottom: 2px solid #474747;
 }
 
 
