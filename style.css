@@ -191,8 +191,12 @@ ul.contact {
     width: calc(50% - 1.5em);
 }
 
-ul.contact-information {
-    width: calc(50% - 1.5em);
+.contact-information {
+    display: grid;
+}
+
+i a {
+    color: black;
 }
 
 #b3Eb3Y66Aw {
@@ -416,7 +420,7 @@ strong {
     /* border-radius: 20%;
     border: 1px solid #474747; */
     padding: 5%;
-    margin-right: 5%;
+    /* margin-right: 5%; */
 }
 
 .logo-slideshow {
@@ -468,6 +472,7 @@ strong {
 }
 
 .contact-content.active {
+    width: 100%;
     border: 2px solid #474747;
     padding: 5%;
     visibility: visible;
