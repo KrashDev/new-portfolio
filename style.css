@@ -413,7 +413,14 @@ strong {
 }
 
 :before {
-    padding: 10%;
+    /* border-radius: 20%;
+    border: 1px solid #474747; */
+    padding: 5%;
+    margin-right: 5%;
+}
+
+.logo-slideshow {
+    text-align: center;
 }
 
 
