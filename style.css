@@ -1,7 +1,7 @@
 body {
     /* background-image: url("images/gplaypattern.png"); */
     overflow-x: hidden;
-    /* overflow-y: hidden; */
+    overflow-y: hidden;
 }
 
 a:hover,
@@ -160,7 +160,7 @@ ul {
     top: 25%;
     left: 35%;
     z-index: 99;
-    height: 500px;
+    /* height: 500px; */
     width: 50%;
 }
 
@@ -450,7 +450,7 @@ strong {
 
 .logos-content.active {
     border: 2px solid #474747;
-    padding: 5%;
+    padding: 3%;
     visibility: visible;
 }
 
@@ -472,10 +472,19 @@ strong {
 }
 
 .contact-content.active {
+    top: 30px;
     width: 100%;
     border: 2px solid #474747;
-    padding: 5%;
+    padding: 3%;
     visibility: visible;
+}
+
+.current-projects {
+    text-align: center;
+}
+
+.current-projects img {
+    margin-right: 5%;
 }
 
 
@@ -503,7 +512,7 @@ strong {
 
 .about-content.active {
     border: 2px solid #474747;
-    padding: 5%;
+    padding: 3%;
     visibility: visible;
 }
 
@@ -533,7 +542,6 @@ strong {
 
 .logo-text {
     text-align: left;
-    margin-bottom: 40px;
 }
 
 .logos-content img {

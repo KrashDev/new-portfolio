@@ -70,7 +70,7 @@ $(document).ready(function() {
         var target = $(event.target);
         if (target.is(".home")) {
             $('.home, .home-content').toggleClass('active');
-            $('.about, .about-content, .logos, .logos-content').removeClass('active');
+            $('.about, .about-content, .logos, .logos-content, .contact, .contact-content').removeClass('active');
             $('.main').toggleClass('active');
             if ($('.home').hasClass('active')) {
                 $('.main-img').css('display', 'block');
@@ -78,14 +78,14 @@ $(document).ready(function() {
         }
         if (target.is(".about")) {
             $('.about, .about-content').toggleClass('active');
-            $('.home, .home-content, .logos, .logos-content').removeClass('active');
+            $('.home, .home-content, .logos, .logos-content, .contact, .contact-content').removeClass('active');
             if ($('.about').hasClass('active')) {
                 $('.main-img').css('display', 'none');
             }
         }
         if (target.is(".logos")) {
             $('.logos, .logos-content').toggleClass('active');
-            $('.home, .home-content, .about, .about-content').removeClass('active');
+            $('.home, .home-content, .about, .about-content, .contact, .contact-content').removeClass('active');
             if ($('.logos').hasClass('active')) {
                 $('.main-img').css('display', 'none');
             }
@@ -97,41 +97,6 @@ $(document).ready(function() {
                 $('.main-img').css('display', 'none');
             }
         }
-    });
-
-
-    //------------------ social links functionality ------------------ //
-
-    $('.footer-links .facebook').mouseover(function() {
-        $(this).find('img').attr('src', 'images/fb-logo-on.svg');
-    });
-
-    $('.footer-links .facebook').mouseleave(function() {
-        $(this).find('img').attr('src', 'images/fb-logo.svg');
-    });
-
-    $('.footer-links .insta').mouseover(function() {
-        $(this).find('img').attr('src', 'images/insta-logo-on.svg');
-    });
-
-    $('.footer-links .insta').mouseleave(function() {
-        $(this).find('img').attr('src', 'images/insta-logo.svg');
-    });
-
-    $('.footer-links .linked').mouseover(function() {
-        $(this).find('img').attr('src', 'images/linked-logo-on.svg');
-    });
-
-    $('.footer-links .linked').mouseleave(function() {
-        $(this).find('img').attr('src', 'images/linked-logo.svg');
-    });
-
-    $('.footer-links .git').mouseover(function() {
-        $(this).find('img').attr('src', 'images/gh-logo-on.svg');
-    });
-
-    $('.footer-links .git').mouseleave(function() {
-        $(this).find('img').attr('src', 'images/gh-logo.svg');
     });
 
 
