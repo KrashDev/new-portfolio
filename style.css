@@ -610,3 +610,41 @@ strong {
 .footer-links a:hover {
     text-decoration: none;
 }
+
+@media only screen and (max-width: 600px) {
+    body {
+        /* background-color: blue; */
+    }
+    .orbit {
+        display: none;
+    }
+    .main,
+    ul {
+        display: none;
+    }
+    .about-content,
+    .contact-content {
+        visibility: visible;
+        position: relative;
+        width: 95%;
+    }
+    .content {
+        top: 20%;
+        left: unset;
+        margin: 5%;
+        width: 95%;
+        /* text-align: center; */
+    }
+    .main-nav {
+        height: auto;
+        width: -webkit-fill-available;
+        border-bottom: 2px solid #474747;
+    }
+    .about-content {
+        margin-bottom: 20%;
+    }
+    .donny-text,
+    .descriptor-text {
+        left: 5%;
+    }
+}
