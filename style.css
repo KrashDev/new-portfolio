@@ -111,6 +111,16 @@ img.moon {
     background-size: cover;
 }
 
+
+/* .main .banner-img {
+    width: 60%;
+    height: 60%;
+    background-image: url("images/banner.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
 .main-nav {
     height: 600px;
     margin-top: 3%;
@@ -558,7 +568,14 @@ strong {
 .bookmarker,
 .beatroot,
 .roof,
-.peach {
+.peach,
+.sputnik,
+.krash,
+.krash-chip,
+.krash-chip2,
+.cq-logo,
+.gk-logo,
+.ghost {
     height: 150px;
 }
 
