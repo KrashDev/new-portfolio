@@ -66,7 +66,7 @@ $(document).ready(function() {
     //------------------ navigation menu functionality ------------------ //
 
 
-    $('.home, .about, .contact, .logos').click(function(event) {
+    $('.home, .about, .contact, .logos, .watch').click(function(event) {
         var target = $(event.target);
         if (target.is(".home")) {
             $('.home, .home-content').toggleClass('active');
@@ -90,6 +90,13 @@ $(document).ready(function() {
                 $('.main-img').css('display', 'none');
             }
         }
+        if (target.is(".watch")) {
+          $('.watch, .watch-content').toggleClass('active');
+          $('.home, .home-content, .about, .about-content, .logo, .logo-content, .contact, .contact-content').removeClass('active');
+          if ($('.watch').hasClass('active')) {
+              $('.main-img').css('display', 'none');
+          }
+      }
         if (target.is(".contact")) {
             $('.contact, .contact-content').toggleClass('active');
             $('.home, .home-content, .logos, .logos-content, .about, .about-content').removeClass('active');
@@ -102,7 +109,7 @@ $(document).ready(function() {
 
     //------------------ logos functionality ------------------ //
 
-    $('.next-logo').click(function() {
+    $('i.next').click(function() {
         var imgActive = $(this).parent().find('img.active');
         if ($(imgActive).hasClass('last')) {
             $(imgActive).toggleClass('active');
@@ -113,7 +120,7 @@ $(document).ready(function() {
         }
     });
 
-    $('.previous-logo').click(function() {
+    $('i.previous').click(function() {
         var imgActive = $(this).parent().find('img.active');
         if ($(imgActive).hasClass('first')) {
             $(imgActive).toggleClass('active');

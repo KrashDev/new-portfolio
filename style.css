@@ -99,7 +99,7 @@ img.moon {
     margin-top: 8%;
     margin-left: 34%;
     height: 700px;
-    width: 100%;
+    width: 75%;
 }
 
 .main .main-img {
@@ -136,7 +136,7 @@ img.moon {
 
 .main-nav li {
     border-bottom: 2px solid white;
-    width: 30%;
+    width: 40%;
     padding: 1%;
     margin: 4%;
     display: block;
@@ -433,12 +433,11 @@ strong {
     /* margin-right: 5%; */
 }
 
+/* --------------------- logos content ---------------------  */
+
 .logo-slideshow {
     text-align: center;
 }
-
-
-/* --------------------- logos content ---------------------  */
 
 .logos-content {
     font-size: 20px;
@@ -476,6 +475,59 @@ strong {
 .logos-content img.active {
     display: inline-block;
 }
+
+/* --------------------- watch content ---------------------  */
+
+.watch-slideshow {
+  text-align: center;
+}
+
+.watch-content {
+  font-size: 20px;
+  visibility: hidden;
+  position: absolute;
+  display: block;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background: white;
+}
+
+.watch {
+  border-bottom: 2px solid white;
+}
+
+.watch.active {
+  border-bottom: 2px solid black;
+}
+
+.watch-content.active {
+  border: 2px solid #474747;
+  padding: 3%;
+  visibility: visible;
+}
+
+.watch-content img {
+  width: 25%;
+  display: none;
+}
+
+.watch-content i {
+  display: inline-block;
+}
+
+.watch-content img.active {
+  display: inline-block;
+}
+
+.watch-slideshow .previous {
+  margin-right:5%;
+}
+
+.watch-slideshow .next {
+  margin-left:5%;
+}
+
+/* --------------------- contact content ---------------------  */
 
 .contact.active {
     border-bottom: 2px solid black;
@@ -550,11 +602,11 @@ strong {
     visibility: visible;
 }
 
-.logo-text {
+.logo-text, .watch-text {
     text-align: left;
 }
 
-.logos-content img {
+.logos-content img, , .watch-text img {
     margin: 20px;
 }
 
